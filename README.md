@@ -6,7 +6,4 @@
 1. The checkout order is immutable so that multiple calculations yield the same result  
 
 ## Testing Approach
-Integration tests treat the application as a black box. They cover all the acceptance criteria defined in the requirements, plus a few edge cases.
-
-Regarding unit tests, I chose to rely on integration tests alone as the implementation changed dramatically with each iteration and maintaining the unit tests would've taken considerable time.   
-  
+Integration tests treat the application as a black box. They cover all the acceptance criteria defined in the requirements, plus a few edge cases.  
