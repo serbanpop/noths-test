@@ -113,6 +113,13 @@ class CheckoutTest {
     }
 
     @Test
+    void doesNotApplyDiscountWhenOrderIsEmpty() {
+        BigDecimal price = checkout.total();
+
+        assertThat(price).isEqualTo(new BigDecimal("0.00"));
+    }
+
+    @Test
     void totalIsZeroWhenOderIsEmpty() {
         BigDecimal price = checkout.total();
 
